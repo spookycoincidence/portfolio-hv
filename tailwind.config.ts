@@ -1,20 +1,20 @@
-// tailwind.config.ts
-import type { Config } from 'tailwindcss'
+// tailwind.config.js
+import { type Config } from 'tailwindcss'
 
 const config: Config = {
-  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
-        accent: '#c084fc',
         background: '#0e0e0e',
-        soft: '#1f2937',
         textPrimary: '#f5f5f5',
-        textSecondary: '#9ca3af',
+        card: '#1a1a1a',
+        accent: '#a78bfa', 
+        accentHover: '#c084fc', 
       },
       fontFamily: {
-        sans: ['var(--font-sans)'],
-        mono: ['var(--font-mono)'],
+        sans: ['Inter', 'sans-serif'],
+        mono: ['Fira Code', 'monospace'],
       },
     },
   },
